@@ -5,5 +5,12 @@ function generateCPF(info, tab) {
 
 }
 
-var cpf = chrome.contextMenus.create({"title": "Generate CPF", "contexts":["editable"],
+var generate = chrome.contextMenus.create({"title": "Generate", "contexts":["editable"],
     "onclick": generateCPF});
+
+var cpf = chrome.contextMenus.create({"title": "Generate CPF", "parentId": generate, "contexts":["editable"],
+    "onclick": generateCPF});
+
+var cnpj = chrome.contextMenus.create({"title": "Generate CNPJ", "parentId": generate, "contexts":["editable"],
+    "onclick": generateCPF});
+
