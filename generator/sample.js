@@ -5,8 +5,7 @@ function generateCPF(info, tab) {
 
 }
 
-var generate = chrome.contextMenus.create({"title": "Generate", "contexts":["editable"],
-    "onclick": generateCPF});
+var generate = chrome.contextMenus.create({"title": "Generate", "contexts":["editable"]});
 
 var cpf = chrome.contextMenus.create({"title": "Generate CPF", "parentId": generate, "contexts":["editable"],
     "onclick": generateCPF});
