@@ -2,10 +2,14 @@
   "name": "Context Menus Generator",
   "description": "Generate CPF from Context Menus API",
   "version": "0.1",
-  "permissions": ["contextMenus"],
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
   "background": {
-    "scripts": ["sample.js"]
+    "scripts": ["index.js", "utils.js"]
   },
   "manifest_version": 2
 }
-
