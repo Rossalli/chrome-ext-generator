@@ -1,6 +1,6 @@
 {
-  "name": "Context Menus Generator",
-  "description": "Generate CPF from Context Menus API",
+  "name": "Gerador de Dados no Botão Direito",
+  "description": "Gera dados no campo de texto utilizando o botao direito. Simples, rapido e facil.",
   "version": "0.1",
   "permissions": [
     "contextMenus",
