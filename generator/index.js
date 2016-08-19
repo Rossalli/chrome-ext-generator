@@ -36,19 +36,19 @@ var cpfWithMask = chrome.contextMenus.create({
     "onclick": generateCPFWithMask
 });
 
-var cnpj = chrome.contextMenus.create({
+/*var cnpj = chrome.contextMenus.create({
     "title": "Generate CNPJ",
     "parentId": generate,
     "contexts": ["editable"],
     "onclick": generateCPF
-});
+});*/
 
 
 function updateField(value) {
     console.log('click');
     chrome.tabs.executeScript(null,
         {
-            code: "document.activeElement.value = " + value
+            code: "document.activeElement.value = '" + value +"'"
         }
     );
 }
