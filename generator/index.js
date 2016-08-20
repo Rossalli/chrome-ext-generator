@@ -17,9 +17,21 @@ function generateCPFWithoutMask(){
     generateCPF(null);
 }
 
+function generateEmail(){
+    var value = utils.generateRandomString(5) + "@" + utils.generateRandomString(3) + ".com";
+    updateField(value);
+}
+
 var generate = chrome.contextMenus.create({
     "title": "Gerador",
     "contexts": ["editable"]
+});
+
+var email = chrome.contextMenus.create({
+    "title": "Gerar email",
+    "parentId": generate,
+    "contexts": ["editable"],
+    "onclick": generateEmail
 });
 
 var cpfWithoutMas = chrome.contextMenus.create({
