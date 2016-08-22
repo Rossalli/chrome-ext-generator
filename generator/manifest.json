@@ -1,7 +1,7 @@
 {
   "name": "Gerador de Dados no Botão Direito",
   "description": "Gera dados no campo de texto utilizando o botao direito. Simples, rápido e fácil.",
-  "version": "0.1",
+  "version": "0.2",
   "permissions": [
     "contextMenus",
     "tabs",
